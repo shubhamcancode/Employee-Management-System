@@ -1,0 +1,67 @@
+                             * Level - 1 *
+                           + Creating Splash Class +
+
+1. We are creating Frame by importing JFrame from swing package.
+2. In the default ctor, we are specifying the size of the frame
+    - setSize(width, height); //specifying the frame dimensions
+    - setVisibility(true);  // making the frame visible
+    - setLocation(x from left, y from top); // adjusting frames position from x-dim's from left and y-dim's from top
+3. Giving color to the frame by importing AWT pkg, and Color class
+
+4. Creating project title component :
+    - JLable :
+        - setBounds(): adding x,y dim's and width, height
+        - setFont() : font-name, font-style, font-size
+        - setForeground : Color-Red
+    * Creating dipper/blinker animation using infinite while loop and exceptions
+        - utilized Thread.sleep() for specifying the dipper duration
+
+5.  Adding foreground image : ImageIcon
+        - adding image from src/icons folder using ClassLoader
+        - scaling image/ scale default
+        - setting bounds to the image
+        - adding image with add();
+
+6. Creating a "clickhere" button : JButton
+    - bounding the size, setting background color, setting foreground color
+
+                             * Level - 2 *
+                           + Creating Login Class +
+
+1. We are creating Frame by importing JFrame from swing package.
+2. In the default ctor, we are specifying the size of the frame
+    - setSize(width, height); //specifying the frame dimensions
+    - setVisibility(true);  // making the frame visible
+    - setLocation(x from left, y from top); // adjusting frames position from x-dim's from left and y-dim's from top
+3. Giving color to the frame by importing AWT pkg, and Color class.
+
+4. Creating username and passwords components
+    - JLable : "Username/password";
+    - setting bounds
+    - add(reference_name);
+
+5. Creating text-fields for username and password
+    - JTextFields : creating obj
+    - setting bounds for username/password
+    - add(reference_name);
+
+6. Adding square-image on the right :
+    - ImageIcon : ClassLoader: "/path";
+    - Image : getScaleInstance();
+    - setting bounds
+    - add(image);
+
+7. Connecting Splash class with Login class
+    - In Splash class, implement ActionListener
+    - Override Abstract Method, as AL is an interface.
+    - creating obj of Login class for opening the frame.
+
+                             * Level - 3 *
+                           + JDBC Connectivity +
+
+    * JDBC Connection in 5 Steps :
+    1. Register the Driver Class
+    2. Creating the connection String
+    3. Creating statement
+    4. Executing mysql queries
+    5. Closing the connections
